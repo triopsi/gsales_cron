@@ -6,7 +6,7 @@
 ini_set("soap.wsdl_cache_enabled", "0"); 
 
 $strAPIKey = '<API-Keys>'; 
-$strApiWsdlUrl = 'http://<Gsales-Domain>/gsales2/api/api.php?wsdl'; 
+$strApiWsdlUrl = 'http://<Gsales-Domain>/api/api.php?wsdl'; 
 
 $client = new soapclient($strApiWsdlUrl);  
 $arrCount = $client->processContractsRepayable($strAPIKey);
